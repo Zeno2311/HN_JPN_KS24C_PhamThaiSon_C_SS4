@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 int main(){
-	int songuyen,hangtram,hangchuc,donvi;
+	int a,b,c;
 	
-	printf("Moi ban nhap so nguyen co ba chu so : ");
-	scanf("%d",&songuyen);
+	printf("Moi ban nhap so nguyen thu nhat : ");
+	scanf("%d",&a);
+	printf("Moi ban nhap so nguyen thu hai : ");
+	scanf("%d",&b);
+	printf("Moi ban nhap so nguyen thu ba : ");
+	scanf("%d",&c);
 	
-	hangtram = ((songuyen/100)%10);
-	hangchuc = ((songuyen/10)%10);
-	donvi = songuyen%10;
-	if( hangchuc < donvi < hangtram ){
+	if( b < c < a ){
 		printf("So thu 3 nam trong khoang giua so thu 2 va so thu 1");
 	}else{
 		printf("So thu 3 khong nam trong khoang giua so thu 2 va so thu 1");
